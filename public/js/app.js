@@ -59419,6 +59419,7 @@ var routes = [{
   component: __webpack_require__(/*! ./components/blog/Index.vue */ "./resources/js/components/blog/Index.vue")["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  mode: 'history',
   routes: routes // short for `routes: routes`
 
 }); // v-form configuration
