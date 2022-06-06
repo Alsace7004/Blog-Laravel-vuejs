@@ -111,30 +111,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
             <!---->
             <li class="nav-item">
-            <a href="#" class="nav-link">
+            <router-link to="/users" class="nav-link">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
-                Profile
+                Users
               </p>
-            </a>
+            </router-link>
           </li>
           <!---->
             <!---->
             <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
             <i class="nav-icon fas fa-power-off"></i>
               <p>
                Logout
               </p>
             </a>
-            <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
           </li>
           <!---->
         </ul>

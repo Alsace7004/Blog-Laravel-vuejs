@@ -16,6 +16,7 @@ let routes = [
     { path: '/dashboard', component: require('./components/ExampleComponent.vue').default },
     { path: '/category', component: require('./components/Category.vue').default },
     { path: '/post', component: require('./components/Post.vue').default },
+    { path: '/users', component: require('./components/Users.vue').default },
     // blog vues
     { path: '/contact', component: require('./components/blog/Contact.vue').default },
     { path: '/index', component: require('./components/blog/Index.vue').default },

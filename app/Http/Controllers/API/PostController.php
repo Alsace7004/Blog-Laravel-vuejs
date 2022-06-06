@@ -127,7 +127,7 @@ class PostController extends Controller
             }
 
                 //$post = new Post();
-                $post->user_id=auth('api')->user();
+                $post->user_id=1;
                 $post->title=$request->title;
                 $post->description=$request->description;
                 $post->photo=$name;

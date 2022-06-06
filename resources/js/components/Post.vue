@@ -103,7 +103,7 @@
                 posts:[],
                 users:[],
                 form:new Form({
-                    
+                    id:'',
                     user_id:'1',
                     title:'',
                     description:'',
@@ -231,7 +231,7 @@
             },
             createPost(){
                     this.$Progress.start();
-                        alert('hello');
+                      //  alert('hello');
                     this.form.post('api/post').then(res=>{
                     
                     Fire.$emit('AfterCreate');
